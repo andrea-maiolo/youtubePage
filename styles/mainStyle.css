@@ -1,0 +1,50 @@
+.searchbar{
+    position: fixed;
+}
+
+.toTheLeft {
+    float: left;
+}
+
+#hamburger {
+    width: 20px;
+    height: 20px;
+}
+
+#youtube {
+    width: 70px;
+    height: 30px;
+}
+
+.search-container {
+    margin: 3em;
+}
+
+#lent{
+    width: 20px;
+    height: 20px;
+}
+
+.toTheRight {
+    float: right;
+}
+
+#upload {
+    width: 20px;
+    height: 20px;
+}
+
+#app {
+    width: 20px;
+    height: 20px;
+}
+
+#bell {
+    width: 20px;
+    height: 20px;
+}
+
+#user {
+    width: 20px;
+    height: 20px;
+}
