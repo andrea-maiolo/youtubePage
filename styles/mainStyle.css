@@ -1,3 +1,8 @@
+/* header {
+    position:fixed;
+    width:100%;
+} */
+
 .searchbar {
  display: flex;
 }
@@ -9,6 +14,7 @@
 #hamburger {
     width: 20px;
     height: 20px;
+    opacity: 50%;
     margin-left: 1.2em;
     margin-bottom: 0.4em;
 }
@@ -63,22 +69,41 @@
     margin-left:1.2em;
 }
 
+.nav {
+    margin-top: -0.5em;
+}
+
 #upload {
     width: 20px;
     height: 20px;
+    opacity: 50%;
+    margin-left: 2.2em;
+    margin-top:0.7em;
 }
 
 #app {
     width: 20px;
     height: 20px;
+    opacity: 50%;
+    margin-left: 1.4em;
+    margin-top:0.5em;
 }
 
 #bell {
     width: 20px;
     height: 20px;
+    opacity: 50%;
+    margin-left: 1.6em;
+    margin-top: 1em;
 }
 
 #user {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 2em;
 }
+
+/* .video-container {
+    margin:20em;
+} */
