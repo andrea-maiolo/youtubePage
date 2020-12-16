@@ -33,297 +33,499 @@
         </div>
     </header>
     <main>
-        <div class="video-container">
-                <video controls>
-                    <source src="https://www.youtube.com/watch?v=u4ENF5OCtkY&list=PL0PwxJm2JWCRdZ41OofKKAVGTbuJ8lbnd&index=5&t=151s">
-                </video>
-                <div id="meta-panel">
+      <section class="video-container">
+         <iframe id="main-video" src="https://www.youtube.com/embed/u4ENF5OCtkY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div id="meta-panel">
                     <h1 id="video-title">Jazzy Town | Lofi & JazzHop</h1>
                     <p id="views">3.672.903 views • Set 11 2017</p>
                     <nav id="options">
-                        <button id="like">
+                        <button class="nav-buttons" id="main-like">
                             <img src="styles/images/thumb-up.svg">
+                            <span class="nav-span">64K</span>
                         </button>
-                        <span>64.695</span>
-                        <button id="dislike">
+                        <button class="nav-buttons" id="main-dislike">
                             <img src="styles/images/thumb-down.svg">
+                            <span class="nav-span">819</span>
                         </button>
-                        <span>819</span>
-                        <button id="share">
+                        <button class="nav-buttons" id="share">
                             <img src="styles/images/share.svg">
+                            <span class="nav-span">SHARE</span>
                         </button>
-                        <span>SHARE</span>
-                        <button id="save">
+                        <button class="nav-buttons" id="save">
                             <img src="styles/images/save.svg">
+                            <span class="nav-span">SAVE</span>
                         </button>
-                        <span>SAVE</span>
-                        <button id="more-options">
+                        <button class="nav-buttons" id="more-options">
                             <img src="styles/images/dots-horizontal.svg">
                         </button>
                     </nav>
                 </div>
-            </div>
-        <aside>
-            <section>
-                <h5>Fantastic Jazz</h5>
-                <p>Fantastic Music - 5/14</p>
-                <button>
-                    <img src="styles/images/menu-down.svg"> 
-                </button>
-            </section>
-            <section class="recommendations">
-                <a class="thumbnail" href="https://www.youtube.com/watch?v=avmjunRX_xo&t=1126s" target="_blank">
-                  <div class="thumbnail-img">
-                    <img src="https://i.ytimg.com/vi/avmjunRX_xo/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&amp;rs=AOn4CLCdlMk5Vf2645LsyUYlBNI95i7qDA" alt="recommendation video">
-                    <div class="duration">
-                      <span>45:36</span>
-                    </div>
-                    <div class="thumbnail-img-overlay">
-                      <button class="btn">
-                        <img src="images/clock.svg" alt="watch later">
+                </section>
+                <!-- <aside style="background-color:brown">
+                  <section>
+                      <h5>Fantastic Jazz</h5>
+                      <p>Fantastic Music - 5/14</p>
+                      <button>
+                          <img src="styles/images/menu-down.svg"> 
                       </button>
-                      <button class="btn">
-                        <img src="images/playlist-play.svg" alt="add to queue">
+                  </section>
+                  <section class="recommendations">
+                      <a class="thumbnail" href="https://www.youtube.com/watch?v=avmjunRX_xo&t=1126s" target="_blank">
+                        <div class="thumbnail-img">
+                          <img src="https://i.ytimg.com/vi/avmjunRX_xo/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&amp;rs=AOn4CLCdlMk5Vf2645LsyUYlBNI95i7qDA" alt="recommendation video">
+                          <div class="duration">
+                            <span>45:36</span>
+                          </div>
+                          <div class="thumbnail-img-overlay">
+                            <button class="btn">
+                              <img src="images/clock.svg" alt="watch later">
+                            </button>
+                            <button class="btn">
+                              <img src="images/playlist-play.svg" alt="add to queue">
+                            </button>
+                          </div>
+                        </div>
+                        <div class="thumbnail-info">
+                          <h3 class="thumbnail-title">
+                            Mix - Jazzy Town | Lofi & JazzHop
+                          </h3>
+                          <div class="thumbnail-channel-name">
+                            Fantastic Music
+                          </div>
+                          <p class="thumbnail-video-info">Recommended for you</p>
+                          <span class="thumbnail-new">New</span>
+                        </div>
+                        <div class="thumbnail-overlay">
+                          <button class="btn">
+                            <img src="images/dots-vertical-thumb.svg" alt="thumbnail options">
+                          </button>
+                        </div>
+                      </a>
+                      <a class="thumbnail" href="https://www.youtube.com/watch?v=YkINc028fs4" target="_blank">
+                        <div class="thumbnail-img">
+                          <img src="https://i.ytimg.com/vi/YkINc028fs4/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLBaf1p9irjO1KlY13ko64CLxCG0VA" alt="recommendation video">
+                          <div class="duration">
+                            <span>18:44</span>
+                          </div>
+                          <div class="thumbnail-img-overlay">
+                            <button class="btn">
+                              <img src="images/clock.svg" alt="watch later">
+                            </button>
+                            <button class="btn">
+                              <img src="images/playlist-play.svg" alt="add to queue">
+                            </button>
+                          </div>
+                        </div>
+                        <div class="thumbnail-info">
+                          <h3 class="thumbnail-title">
+                            Jazz Cloud | Lofi JazzHop
+                          </h3>
+                          <div class="thumbnail-channel-name">
+                            Fantastic Music
+                          </div>
+                          <p class="thumbnail-video-info">1,6Mln views</p>
+                          <span class="thumbnail-new">New</span>
+                        </div>
+                        <div class="thumbnail-overlay">
+                          <button class="btn">
+                            <img src="images/dots-vertical-thumb.svg" alt="thumbnail options">
+                          </button>
+                        </div>
+                      </a>
+                      <a class="thumbnail" href="https://www.youtube.com/watch?v=yz7x-PpUQxE" target="_blank">
+                        <div class="thumbnail-img">
+                          <img src="https://i.ytimg.com/vi/yz7x-PpUQxE/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLAgzHO86I-3MXimamX4vX0kzNi5jw" alt="recommendation video">
+                          <div class="duration">
+                            <span>10:38</span>
+                          </div>
+                          <div class="thumbnail-img-overlay">
+                            <button class="btn">
+                              <img src="images/clock.svg" alt="watch later">
+                            </button>
+                            <button class="btn">
+                              <img src="images/playlist-play.svg" alt="add to queue">
+                            </button>
+                          </div>
+                        </div>
+                        <div class="thumbnail-info">
+                          <h3 class="thumbnail-title">
+                            Autumn Nights
+                          </h3>
+                          <div class="thumbnail-channel-name">
+                            Fantastic Music
+                            <img src="images/check-circle.svg" alt="verified">
+                          </div>
+                          <p class="thumbnail-video-info">Recommended for you</p>
+                          <span class="thumbnail-new">New</span>
+                        </div>
+                        <div class="thumbnail-overlay">
+                          <button class="btn">
+                            <img src="images/dots-vertical-thumb.svg" alt="thumbnail options">
+                          </button>
+                        </div>
+                      </a>
+                      <a class="thumbnail" href="https://www.youtube.com/watch?v=jO19ozYFHFU" target="_blank">
+                        <div class="thumbnail-img">
+                          <img src="https://i.ytimg.com/vi/jO19ozYFHFU/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLCdeU_nhwSWMk-7Wm9pYfnkHQ94lg" alt="recommendation video">
+                          <div class="duration">
+                            <span>8:32</span>
+                          </div>
+                          <div class="thumbnail-img-overlay">
+                            <button class="btn">
+                              <img src="images/clock.svg" alt="watch later">
+                            </button>
+                            <button class="btn">
+                              <img src="images/playlist-play.svg" alt="add to queue">
+                            </button>
+                          </div>
+                        </div>
+                        <div class="thumbnail-info">
+                          <h3 class="thumbnail-title">
+                            DownTown | JazzHop
+                          </h3>
+                          <div class="thumbnail-channel-name">
+                            Fantastic Music
+                            <img src="images/check-circle.svg" alt="verified">
+                          </div>
+                          <p class="thumbnail-video-info">Recommended for you</p>
+                        </div>
+                        <div class="thumbnail-overlay">
+                          <button class="btn">
+                            <img src="images/dots-vertical-thumb.svg" alt="thumbnail options">
+                          </button>
+                        </div>
+                      </a>
+                      <a class="thumbnail" href="https://www.youtube.com/watch?v=HtWxLgbYwqk" target="_blank">
+                        <div class="thumbnail-img">
+                          <img src="https://i.ytimg.com/vi/HtWxLgbYwqk/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLBusQEn2Vns5EfI7gJoLDs-Zfe5PA" alt="recommendation video">
+                          <div class="duration">
+                            <span>11:37</span>
+                          </div>
+                          <div class="thumbnail-img-overlay">
+                            <button class="btn">
+                              <img src="images/clock.svg" alt="watch later">
+                            </button>
+                            <button class="btn">
+                              <img src="images/playlist-play.svg" alt="add to queue">
+                            </button>
+                          </div>
+                        </div>
+                        <div class="thumbnail-info">
+                          <h3 class="thumbnail-title">
+                            Lost Woods Chillhop
+                          </h3>
+                          <div class="thumbnail-channel-name">
+                            Fantastic Music
+                          </div>
+                          <p class="thumbnail-video-info">694k views</p>
+                        </div>
+                        <div class="thumbnail-overlay">
+                          <button class="btn">
+                            <img src="images/dots-vertical-thumb.svg" alt="thumbnail options">
+                          </button>
+                        </div>
+                      </a>
+                      <a class="thumbnail" href="https://www.youtube.com/watch?v=WnpaUW7lXxo" target="_blank">
+                        <div class="thumbnail-img">
+                          <img src="https://i.ytimg.com/vi/WnpaUW7lXxo/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLAsETaz7PQl1Po-AIRiwPGwdQHxBw" alt="recommendation video">
+                          <div class="duration">
+                            <span>10:29</span>
+                          </div>
+                          <div class="thumbnail-img-overlay">
+                            <button class="btn">
+                              <img src="images/clock.svg" alt="watch later">
+                            </button>
+                            <button class="btn">
+                              <img src="images/playlist-play.svg" alt="add to queue">
+                            </button>
+                          </div>
+                        </div>
+                        <div class="thumbnail-info">
+                          <h3 class="thumbnail-title">
+                            Malibu Club
+                          </h3>
+                          <div class="thumbnail-channel-name">
+                            Fantastic Music
+                            <img src="images/check-circle.svg" alt="verified">
+                          </div>
+                          <p class="thumbnail-video-info">Recommended for you</p>
+                          <span class="thumbnail-new">New</span>
+                        </div>
+                        <div class="thumbnail-overlay">
+                          <button class="btn">
+                            <img src="images/dots-vertical-thumb.svg" alt="thumbnail options">
+                          </button>
+                        </div>
+                      </a>
+                      <a class="thumbnail" href="https://www.youtube.com/watch?v=YlG6gBZHPaQ" target="_blank">
+                        <div class="thumbnail-img">
+                          <img src="https://i.ytimg.com/vi/YlG6gBZHPaQ/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLAfag2PLgmDli_TwRqNeGMldWPgag" alt="recommendation video">
+                          <div class="duration">
+                            <span>10:06</span>
+                          </div>
+                          <div class="thumbnail-img-overlay">
+                            <button class="btn">
+                              <img src="images/clock.svg" alt="watch later">
+                            </button>
+                            <button class="btn">
+                              <img src="images/playlist-play.svg" alt="add to queue">
+                            </button>
+                          </div>
+                        </div>
+                        <div class="thumbnail-info">
+                          <h3 class="thumbnail-title">
+                            Winter Wonderland
+                          </h3>
+                          <div class="thumbnail-channel-name">
+                            Fantastic Music
+                            <img src="images/check-circle.svg" alt="verified">
+                          </div>
+                          <p class="thumbnail-video-info">Recommended for you</p>
+                        </div>
+                        <div class="thumbnail-overlay">
+                          <button class="btn">
+                            <img src="images/dots-vertical-thumb.svg" alt="thumbnail options">
+                          </button>
+                        </div>
+                      </a>
+                      <a class="thumbnail" href="https://www.youtube.com/watch?v=gZEj8PgK5zM" target="_blank">
+                        <div class="thumbnail-img">
+                          <img src="https://i.ytimg.com/vi/gZEj8PgK5zM/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLCnAFbh10m24QI6SauxT9wA0khFOw" alt="recommendation video">
+                          <div class="duration">
+                            <span>2:31</span>
+                          </div>
+                          <div class="thumbnail-img-overlay">
+                            <button class="btn">
+                              <img src="images/clock.svg" alt="watch later">
+                            </button>
+                            <button class="btn">
+                              <img src="images/playlist-play.svg" alt="add to queue">
+                            </button>
+                          </div>
+                        </div>
+                        <div class="thumbnail-info">
+                          <h3 class="thumbnail-title">
+                            Vibe City
+                          </h3>
+                          <div class="thumbnail-channel-name">
+                            Fantastic Music
+                          </div>
+                          <p class="thumbnail-video-info">Recommended for you</p>
+                          <span class="thumbnail-new">New</span>
+                        </div>
+                        <div class="thumbnail-overlay">
+                          <button class="btn">
+                            <img src="images/dots-vertical-thumb.svg" alt="thumbnail options">
+                          </button>
+                        </div>
+                      </a>
+                    </section>
+              </aside>
+                <div id="comments" style="background-color:blue">
+                  <section class="comment-section">
+                    <div class="comments-info">
+                      <span class="comments-count">962 comments</span>
+                      <button class="btn sort-btn">
+                        <img src="images/sort-variant.svg" alt="sort by" />
+                        SORT BY
                       </button>
                     </div>
-                  </div>
-                  <div class="thumbnail-info">
-                    <h3 class="thumbnail-title">
-                      Mix - Jazzy Town | Lofi & JazzHop
-                    </h3>
-                    <div class="thumbnail-channel-name">
-                      Alien Being
+                    <div class="new-comment">
+                      <div class="user-avatar">
+                        <img
+                          src="//s.ytimg.com/yts/img/avatar_720-vflYJnzBZ.png"
+                          alt="user avatar"
+                        />
+                      </div>
+                      <input
+                        class="comment-input"
+                        type="text"
+                        placeholder="Add a public comment..."
+                      />
                     </div>
-                    <p class="thumbnail-video-info">Recommended for you</p>
-                    <span class="thumbnail-new">New</span>
-                  </div>
-                  <div class="thumbnail-overlay">
-                    <button class="btn">
-                      <img src="images/dots-vertical-thumb.svg" alt="thumbnail options">
-                    </button>
-                  </div>
-                </a>
-                <a class="thumbnail" href="https://www.youtube.com/watch?v=YkINc028fs4" target="_blank">
-                  <div class="thumbnail-img">
-                    <img src="https://i.ytimg.com/vi/YkINc028fs4/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLBaf1p9irjO1KlY13ko64CLxCG0VA" alt="recommendation video">
-                    <div class="duration">
-                      <span>18:44</span>
+                    <div class="comment">
+                      <div class="user-avatar">
+                        <img
+                          src="https://yt3.ggpht.com/a/AGF-l78vZoNvE4pPXoKWwB1miEObqUxursnGdb5t2Q=s48-c-k-c0xffffffff-no-rj-mo"
+                          alt="user avatar"
+                        />
+                      </div>
+                      <div class="comment-info">
+                        <div class="comment-user">
+                          <span class="user-name">Hannah Morrison</span>
+                          <span class="comment-time">1 year ago</span>
+                        </div>
+                        <div class="comment-text">
+                          If I owned a cafe I'd play your mixes all the time for different moods, seasons, and weather. <br/>
+                          Serving coffee, pastries and cozy tunes.
+                        </div>
+                        <div class="comment-options">
+                          <button class="btn cm-like-btn">
+                            <img src="images/thumb-up.svg" alt="comment like button" />
+                            <span>1898</span>
+                          </button>
+                          <button class="btn cm-dislike-btn">
+                            <img
+                              src="images/thumb-down.svg"
+                              alt="comment dislike button"
+                            />
+                          </button>
+                          <button class="btn cm-reply-btn">
+                            <span>REPLY</span>
+                          </button>
+                        </div>
+                        <button class="btn cm-show-replies-btn">
+                          <img src="images/menu-down.svg" alt="show comment replies" />
+                          <span>View 47 replies</span>
+                        </button>
+                      </div>
                     </div>
-                    <div class="thumbnail-img-overlay">
-                      <button class="btn">
-                        <img src="images/clock.svg" alt="watch later">
-                      </button>
-                      <button class="btn">
-                        <img src="images/playlist-play.svg" alt="add to queue">
-                      </button>
+                    <div class="comment">
+                      <div class="user-avatar">
+                        <img
+                          src="https://yt3.ggpht.com/a/AGF-l7-JmgvvTl3H5CwFhsNBMGDbjymSEI34gmr9IA=s48-c-k-c0xffffffff-no-rj-mo"
+                          alt="user avatar"
+                        />
+                      </div>
+                      <div class="comment-info">
+                        <div class="comment-user">
+                          <span class="user-name">
+                            dan lamp
+                          </span>
+                          <span class="comment-time">3 years ago</span>
+                        </div>
+                        <div class="comment-text">
+                          Anyone notice how the trombone, the saxophone and the horns players all look like their instruments?
+                        </div>
+                        <div class="comment-options">
+                          <button class="btn cm-like-btn">
+                            <img src="images/thumb-up.svg" alt="comment like button" />
+                            <span>2641</span>
+                          </button>
+                          <button class="btn cm-dislike-btn">
+                            <img
+                              src="images/thumb-down.svg"
+                              alt="comment dislike button"
+                            />
+                          </button>
+                          <button class="btn cm-reply-btn">
+                            <span>REPLY</span>
+                          </button>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                  <div class="thumbnail-info">
-                    <h3 class="thumbnail-title">
-                      EVERYTHING in Minecraft 1.15 Buzzy Bees!
-                    </h3>
-                    <div class="thumbnail-channel-name">
-                      wattles
+                    <div class="comment">
+                      <div class="user-avatar">
+                        <img
+                          src="https://yt3.ggpht.com/a/AGF-l78dyAA0npLfq1vhqDe-YYbVAulU3xgDz1ZnIw=s48-c-k-c0xffffffff-no-rj-mo"
+                          alt="user avatar"
+                        />
+                      </div>
+                      <div class="comment-info">
+                        <div class="comment-user">
+                          <span class="user-name">Alexandra Eugene</span>
+                          <span class="comment-time">2 years ago</span>
+                        </div>
+                        <div class="comment-text">
+                          Okay are we not gonna talk about how the picture is from Disney's Princess & The Frog?<br>
+                          The man in the yellow jacket standing on his suitcases is Prince Naveen, his butler with a bunch of<br>
+                          suitcases is close behind him and the Shadow Man (voodoo priest) leans against  a building in the 
+                        </div>
+                        <div class="comment-options">
+                          <button class="btn cm-like-btn">
+                            <img src="images/thumb-up.svg" alt="comment like button" />
+                            <span>1747</span>
+                          </button>
+                          <button class="btn cm-dislike-btn">
+                            <img
+                              src="images/thumb-down.svg"
+                              alt="comment dislike button"
+                            />
+                          </button>
+                          <button class="btn cm-reply-btn">
+                            <span>REPLY</span>
+                          </button>
+                        </div>
+                        <button class="btn cm-show-replies-btn">
+                          <img src="images/menu-down.svg" alt="show comment replies" />
+                          <span>View reply</span>
+                        </button>
+                      </div>
                     </div>
-                    <p class="thumbnail-video-info">363k views</p>
-                    <span class="thumbnail-new">New</span>
-                  </div>
-                  <div class="thumbnail-overlay">
-                    <button class="btn">
-                      <img src="images/dots-vertical-thumb.svg" alt="thumbnail options">
-                    </button>
-                  </div>
-                </a>
-                <a class="thumbnail" href="https://www.youtube.com/watch?v=yz7x-PpUQxE" target="_blank">
-                  <div class="thumbnail-img">
-                    <img src="https://i.ytimg.com/vi/yz7x-PpUQxE/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLAgzHO86I-3MXimamX4vX0kzNi5jw" alt="recommendation video">
-                    <div class="duration">
-                      <span>10:38</span>
+                    <div class="comment">
+                      <div class="user-avatar">
+                        <img
+                          src="https://yt3.ggpht.com/a/AGF-l7_T78tz-NJZB93qCy5g6_HDMOsrKTrwHDQeGQ=s48-c-k-c0xffffffff-no-rj-mo"
+                          alt="user avatar"
+                        />
+                      </div>
+                      <div class="comment-info">
+                        <div class="comment-user">
+                          <span class="user-name">Juan Luis Posada</span>
+                          <span class="comment-time">3 years ago</span>
+                        </div>
+                        <div class="comment-text">
+                          Is it me or is old-timey stuff coming back to style,cause I love this shit
+                        </div>
+                        <div class="comment-options">
+                          <button class="btn cm-like-btn">
+                            <img src="images/thumb-up.svg" alt="comment like button" />
+                            <span>1206</span>
+                          </button>
+                          <button class="btn cm-dislike-btn">
+                            <img
+                              src="images/thumb-down.svg"
+                              alt="comment dislike button"
+                            />
+                          </button>
+                          <button class="btn cm-reply-btn">
+                            <span>REPLY</span>
+                          </button>
+                        </div>
+                        <button class="btn cm-show-replies-btn">
+                          <img src="images/menu-down.svg" alt="show comment replies" />
+                          <span>View 16 replies</span>
+                        </button>
+                      </div>
                     </div>
-                    <div class="thumbnail-img-overlay">
-                      <button class="btn">
-                        <img src="images/clock.svg" alt="watch later">
-                      </button>
-                      <button class="btn">
-                        <img src="images/playlist-play.svg" alt="add to queue">
-                      </button>
+                    <div class="comment">
+                      <div class="user-avatar">
+                        <img
+                          src="https://yt3.ggpht.com/a/AGF-l7-qmbtd_ZVLaReCLv3o4eedwxD2Zqz_sx0whQ=s48-c-k-c0xffffffff-no-rj-mo"
+                          alt="user avatar"
+                        />
+                      </div>
+                      <div class="comment-info">
+                        <div class="comment-user">
+                          <span class="user-name">God Jihyo</span>
+                          <span class="comment-time">1 year ago</span>
+                        </div>
+                        <div class="comment-text">
+                          This makes me want to walk around a town confidently, a sunset orange drink in hand as I call everyone darlin'
+                        </div>
+                        <div class="comment-options">
+                          <button class="btn cm-like-btn">
+                            <img src="images/thumb-up.svg" alt="comment like button" />
+                            <span>294</span>
+                          </button>
+                          <button class="btn cm-dislike-btn">
+                            <img
+                              src="images/thumb-down.svg"
+                              alt="comment dislike button"
+                            />
+                          </button>
+                          <button class="btn cm-reply-btn">
+                            <span>REPLY</span>
+                          </button>
+                        </div>
+                        <button class="btn cm-show-replies-btn">
+                          <img src="images/menu-down.svg" alt="show comment replies" />
+                          <span>View 3 replies</span>
+                        </button>
+                      </div>
                     </div>
-                  </div>
-                  <div class="thumbnail-info">
-                    <h3 class="thumbnail-title">
-                      Minecraft NOOB vs PRO : HOW NOOB MAKE THIS RAREST SWORD IN
-                      DIAMOND ANVIL! Challenge 100% trolling
-                    </h3>
-                    <div class="thumbnail-channel-name">
-                      Noob &amp; Pro - Minecraft
-                      <img src="images/check-circle.svg" alt="verified">
-                    </div>
-                    <p class="thumbnail-video-info">Recommended for you</p>
-                    <span class="thumbnail-new">New</span>
-                  </div>
-                  <div class="thumbnail-overlay">
-                    <button class="btn">
-                      <img src="images/dots-vertical-thumb.svg" alt="thumbnail options">
-                    </button>
-                  </div>
-                </a>
-                <a class="thumbnail" href="https://www.youtube.com/watch?v=jO19ozYFHFU" target="_blank">
-                  <div class="thumbnail-img">
-                    <img src="https://i.ytimg.com/vi/jO19ozYFHFU/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLCdeU_nhwSWMk-7Wm9pYfnkHQ94lg" alt="recommendation video">
-                    <div class="duration">
-                      <span>8:32</span>
-                    </div>
-                    <div class="thumbnail-img-overlay">
-                      <button class="btn">
-                        <img src="images/clock.svg" alt="watch later">
-                      </button>
-                      <button class="btn">
-                        <img src="images/playlist-play.svg" alt="add to queue">
-                      </button>
-                    </div>
-                  </div>
-                  <div class="thumbnail-info">
-                    <h3 class="thumbnail-title">
-                      Village Raid (Minecraft Animation)
-                    </h3>
-                    <div class="thumbnail-channel-name">
-                      Black Plasma Studios
-                      <img src="images/check-circle.svg" alt="verified">
-                    </div>
-                    <p class="thumbnail-video-info">Recommended for you</p>
-                  </div>
-                  <div class="thumbnail-overlay">
-                    <button class="btn">
-                      <img src="images/dots-vertical-thumb.svg" alt="thumbnail options">
-                    </button>
-                  </div>
-                </a>
-                <a class="thumbnail" href="https://www.youtube.com/watch?v=HtWxLgbYwqk" target="_blank">
-                  <div class="thumbnail-img">
-                    <img src="https://i.ytimg.com/vi/HtWxLgbYwqk/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLBusQEn2Vns5EfI7gJoLDs-Zfe5PA" alt="recommendation video">
-                    <div class="duration">
-                      <span>11:37</span>
-                    </div>
-                    <div class="thumbnail-img-overlay">
-                      <button class="btn">
-                        <img src="images/clock.svg" alt="watch later">
-                      </button>
-                      <button class="btn">
-                        <img src="images/playlist-play.svg" alt="add to queue">
-                      </button>
-                    </div>
-                  </div>
-                  <div class="thumbnail-info">
-                    <h3 class="thumbnail-title">
-                      19 Updates that Everyone Wants in Minecraft!
-                    </h3>
-                    <div class="thumbnail-channel-name">
-                      Sub's World
-                    </div>
-                    <p class="thumbnail-video-info">694k views</p>
-                  </div>
-                  <div class="thumbnail-overlay">
-                    <button class="btn">
-                      <img src="images/dots-vertical-thumb.svg" alt="thumbnail options">
-                    </button>
-                  </div>
-                </a>
-                <a class="thumbnail" href="https://www.youtube.com/watch?v=WnpaUW7lXxo" target="_blank">
-                  <div class="thumbnail-img">
-                    <img src="https://i.ytimg.com/vi/WnpaUW7lXxo/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLAsETaz7PQl1Po-AIRiwPGwdQHxBw" alt="recommendation video">
-                    <div class="duration">
-                      <span>10:29</span>
-                    </div>
-                    <div class="thumbnail-img-overlay">
-                      <button class="btn">
-                        <img src="images/clock.svg" alt="watch later">
-                      </button>
-                      <button class="btn">
-                        <img src="images/playlist-play.svg" alt="add to queue">
-                      </button>
-                    </div>
-                  </div>
-                  <div class="thumbnail-info">
-                    <h3 class="thumbnail-title">
-                      DIAMOND FARM! SUPER COMBINE! IN MINECRAFT : NOOB vs PRO
-                    </h3>
-                    <div class="thumbnail-channel-name">
-                      Drev - Minecraft
-                      <img src="images/check-circle.svg" alt="verified">
-                    </div>
-                    <p class="thumbnail-video-info">Recommended for you</p>
-                    <span class="thumbnail-new">New</span>
-                  </div>
-                  <div class="thumbnail-overlay">
-                    <button class="btn">
-                      <img src="images/dots-vertical-thumb.svg" alt="thumbnail options">
-                    </button>
-                  </div>
-                </a>
-                <a class="thumbnail" href="https://www.youtube.com/watch?v=YlG6gBZHPaQ" target="_blank">
-                  <div class="thumbnail-img">
-                    <img src="https://i.ytimg.com/vi/YlG6gBZHPaQ/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLAfag2PLgmDli_TwRqNeGMldWPgag" alt="recommendation video">
-                    <div class="duration">
-                      <span>10:06</span>
-                    </div>
-                    <div class="thumbnail-img-overlay">
-                      <button class="btn">
-                        <img src="images/clock.svg" alt="watch later">
-                      </button>
-                      <button class="btn">
-                        <img src="images/playlist-play.svg" alt="add to queue">
-                      </button>
-                    </div>
-                  </div>
-                  <div class="thumbnail-info">
-                    <h3 class="thumbnail-title">
-                      Evolution of Minecraft 2009-2020
-                    </h3>
-                    <div class="thumbnail-channel-name">
-                      Andrew Louis
-                      <img src="images/check-circle.svg" alt="verified">
-                    </div>
-                    <p class="thumbnail-video-info">Recommended for you</p>
-                  </div>
-                  <div class="thumbnail-overlay">
-                    <button class="btn">
-                      <img src="images/dots-vertical-thumb.svg" alt="thumbnail options">
-                    </button>
-                  </div>
-                </a>
-                <a class="thumbnail" href="https://www.youtube.com/watch?v=gZEj8PgK5zM" target="_blank">
-                  <div class="thumbnail-img">
-                    <img src="https://i.ytimg.com/vi/gZEj8PgK5zM/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLCnAFbh10m24QI6SauxT9wA0khFOw" alt="recommendation video">
-                    <div class="duration">
-                      <span>2:31</span>
-                    </div>
-                    <div class="thumbnail-img-overlay">
-                      <button class="btn">
-                        <img src="images/clock.svg" alt="watch later">
-                      </button>
-                      <button class="btn">
-                        <img src="images/playlist-play.svg" alt="add to queue">
-                      </button>
-                    </div>
-                  </div>
-                  <div class="thumbnail-info">
-                    <h3 class="thumbnail-title">
-                      MINECRAFT 1.15: Trailer Vs Reality
-                    </h3>
-                    <div class="thumbnail-channel-name">
-                      TheSamden
-                    </div>
-                    <p class="thumbnail-video-info">Recommended for you</p>
-                    <span class="thumbnail-new">New</span>
-                  </div>
-                  <div class="thumbnail-overlay">
-                    <button class="btn">
-                      <img src="images/dots-vertical-thumb.svg" alt="thumbnail options">
-                    </button>
-                  </div>
-                </a>
-              </section>
-        </aside>
+                  </section>
+                </div> -->
     </main>
 </body>
 </html>

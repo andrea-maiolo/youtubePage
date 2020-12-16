@@ -104,6 +104,40 @@
     margin-left: 2em;
 }
 
-/* .video-container {
-    margin:20em;
-} */
+.video-container {
+    margin-top:1em;
+    background-color: #f9f9f9;
+}
+
+#main-video {
+    width:748px;
+    height:421px; 
+}
+
+#video-title {
+    font-weight: 400;
+    font-size:1.3em;
+}
+
+#views {
+    color:#606060;
+    font-size:1em;
+}
+
+#options {
+    float:right;
+    margin-top:-3em;
+    margin-right:20em;
+}
+
+.nav-buttons {
+    display:contents;
+    text-align: center;
+    font-size:28px;
+    padding:20px;
+    cursor:pointer;
+}
+
+.nav-span {
+    color: #AAAAAA;
+}
