@@ -177,6 +177,54 @@
     opacity: 0.4;
 }
 
-.comments {
-    background-color: brown;
+.thumbnail {
+    margin-bottom: 14em;
+    display:flex;
+    width:200px;
+}
+
+.thumbnail-img {
+    flex:2;
+}
+
+.duration {
+    position: relative;
+    top:-1.4em;
+    left:9.5em;
+    color:#fff;
+    background-color:#000;
+    width: fit-content;
+    font-size: 14px;
+}
+
+.thumbnail-img-overlay {
+    position: relative;
+    top:-7em;
+    left:9em;
+    width:fit-content;
+    display:flex;
+    flex-direction:column;
+}
+
+.btn-thumbnail {
+    flex:1;
+    display:contents;
+}
+
+.watch-later {
+    width:20px;
+    height: 20px;
+}
+
+.add-to-queue {
+    width: 20px;
+    height:20px;
+}
+
+.thumbnail-info {
+    flex:1;
+}
+
+.thumbnail-overlay {
+    flex:0.1;
 }
