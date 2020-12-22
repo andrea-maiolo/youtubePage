@@ -76,7 +76,7 @@
 #upload {
     width: 20px;
     height: 20px;
-    opacity: 50%;
+    opacity:50%;
     margin-left: 2.2em;
     margin-top:0.7em;
 }
@@ -127,17 +127,56 @@
 #options {
     float:right;
     margin-top:-3em;
-    margin-right:20em;
+    margin-right:11.6em;
 }
 
 .nav-buttons {
     display:contents;
     text-align: center;
-    font-size:28px;
+    font-size:14px;
     padding:20px;
     cursor:pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#606060;
 }
 
-.nav-span {
-    color: #AAAAAA;
+.nav-img {
+    width:24px;
+    height:24px;
+    color:#909090;
+}
+
+.side {
+    float :right;
+}
+
+#playlist {
+    margin: 1em 1em 2em 0;
+    display:flex;
+    background-color:#fff;
+}
+
+#playlist-title {
+    flex:4;
+}
+
+#pl-p {
+    font-size:small;
+    font-weight: 500;
+}
+
+#pl-b {
+    flex:1;
+}
+
+#pl-button {
+    margin-top:2em;
+    border:none;
+    background-color: #fff;
+    padding:0;
+    opacity: 0.4;
+}
+
+.comments {
+    background-color: brown;
 }
