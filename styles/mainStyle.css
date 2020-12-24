@@ -104,8 +104,26 @@
     margin-left: 2em;
 }
 
-.video-container {
+#main {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: minmax(100px,auto) repeat(3, 200px);
+    gap:1px 1px;
+    grid-template-areas: 
+    "video-container video-container side"
+    "video-container video-container side"
+    "comments comments side"
+    "comments comments side"
+    "comments comments side"
+    "comments comments side"
+    "comments comments side";
     margin-top:1em;
+}
+
+.comments { grid-area: comments}
+
+.video-container {
+    grid-area: video-container;
     background-color: #f9f9f9;
 }
 
@@ -127,12 +145,11 @@
 #options {
     float:right;
     margin-top:-3em;
-    margin-right:11.6em;
+    margin-right:3.3em;
 }
 
 .nav-buttons {
     display:contents;
-    text-align: center;
     font-size:14px;
     padding:20px;
     cursor:pointer;
@@ -147,7 +164,8 @@
 }
 
 .side {
-    float :right;
+    grid-area:side;
+    background-color: #f9f9f9;
 }
 
 #playlist {
@@ -174,17 +192,53 @@
     border:none;
     background-color: #fff;
     padding:0;
-    opacity: 0.4;
 }
 
+.rotate {
+    -webkit-transform:rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+
 .thumbnail {
-    margin-bottom: 14em;
-    display:flex;
+    margin-bottom: 2em;
+    display:grid;
+    grid-template-areas: 
+    "img img info info dots";
+    grid-template-columns: repeat(5,90px);
+    grid-template-rows:100px;
     width:200px;
+    color:black;
+    text-decoration: none;
 }
 
 .thumbnail-img {
-    flex:2;
+    grid-area: img;
+}
+
+.thumbnail-info { grid-area: info}
+
+.thumbnail-overlay { grid-area:dots}
+
+.thumbnail-title { 
+    margin:0
+}
+
+.thumbnail-channel { 
+    margin:0.1em;
+    font-weight: 200;
+    font-size: 13px;
+    color:#909090;
+}
+
+.vertical-dot {
+    -webkit-transform:rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 
 .duration {
@@ -207,7 +261,6 @@
 }
 
 .btn-thumbnail {
-    flex:1;
     display:contents;
 }
 
@@ -221,10 +274,31 @@
     height:20px;
 }
 
-.thumbnail-info {
-    flex:1;
-}
-
 .thumbnail-overlay {
     flex:0.1;
+}
+
+.allTheSame {
+    font-size: 13px;
+    font-weight: 300;
+}
+
+#comments-info { 
+    margin-bottom: 40em;
+}
+
+#comments-count {
+    font-size:18px;
+    margin:2em;
+    font-weight: 400;
+}
+
+#sort-btn {
+    appearance: none;
+    display:contents;
+    font-size: 14px;
+    padding:20px;
+    cursor:pointer;
+    color:#606060;
+    font-family: Arial, Helvetica, sans-serif;
 }
