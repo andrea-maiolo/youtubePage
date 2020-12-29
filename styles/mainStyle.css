@@ -260,7 +260,13 @@ header {
     transform: rotate(90deg);
 }
 
+
+.none {
+    display:none;
+}
+
 .duration {
+    display:block;
     position: relative;
     top: -1.4em;
     left: 9.5em;
@@ -270,7 +276,12 @@ header {
     font-size: 14px;
 }
 
+.no-thumbnail-img-overlay {
+    display:none;
+}
+
 .thumbnail-img-overlay {
+    display: block;
     position: relative;
     top: -7em;
     left: 9em;
@@ -293,7 +304,12 @@ header {
     height: 20px;
 }
 
+.no-thumbnail-overlay {
+    display:none;
+}
+
 .thumbnail-overlay {
+    display:block;
     flex: 0.1;
 }
 
